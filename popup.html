@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>فكّ التخبيص</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><span class="tag">LOCAL TOOL</span><h1>فكّ التخبيص</h1><p>إصلاح تخطيط لوحة المفاتيح، لا ترجمة النص.</p></header>
+<main>
+<label for="input">النص المُدخل</label><textarea id="input" rows="5" placeholder="الصق النص هنا…" spellcheck="false"></textarea>
+<div class="actions"><button id="toArabic" class="primary">إنجليزي ← عربي</button><button id="toEnglish">عربي ← إنجليزي</button></div>
+<label for="output">النتيجة</label><textarea id="output" rows="5" readonly placeholder="ستظهر النتيجة هنا…" spellcheck="false"></textarea>
+<div class="actions"><button id="copy" class="primary">نسخ النتيجة</button><button id="swap">استخدام النتيجة كمدخل</button><button id="clear">مسح</button></div>
+<label class="setting"><input type="checkbox" id="combine" checked> التعامل مع «لا/لأ/لإ/لآ» كمفتاح واحد</label>
+<p id="status" role="status" aria-live="polite"></p>
+</main><footer>المعالجة محلية داخل المتصفح · <a href="https://github.com/MR-SPH/fakk-al-takhbees-chrome" target="_blank" rel="noreferrer">المصدر على GitHub</a></footer>
+<script src="converter.js"></script><script src="popup.js"></script>
+</body></html>
