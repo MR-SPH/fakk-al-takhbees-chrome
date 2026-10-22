@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
   "name": "فكّ التخبيص",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "حوّل النص بين تخطيطي لوحة المفاتيح العربي 101 والإنجليزي US دون ترجمة.",
-  "default_locale": "ar",
   "permissions": ["storage", "contextMenus", "activeTab", "scripting", "clipboardWrite"],
   "background": { "service_worker": "service-worker.js" },
   "action": {
@@ -15,10 +14,5 @@
       "suggested_key": { "default": "Alt+Shift+K" },
       "description": "حوّل النص المحدد بين تخطيطي العربية والإنجليزية"
     }
-  },
-  "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
   }
 }
